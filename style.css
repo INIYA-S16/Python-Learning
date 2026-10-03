@@ -1,0 +1,178 @@
+/* =========================
+   1. BASIC / RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* =========================
+   2. HEADER
+   ========================= */
+
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/* =========================
+   3. NAVIGATION
+   ========================= */
+
+nav {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   4. MAIN CONTENT
+   ========================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+main h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+main > p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   5. PROGRESS CARDS
+   ========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+.card p {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* =========================
+   6. OVERALL PROGRESS
+   ========================= */
+
+.overall-progress {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.overall-progress h3 {
+    margin-top: 0;
+}
+
+.overall-progress p {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+
+/* =========================
+   7. PREPARATION SECTION
+   ========================= */
+
+.preparation {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.preparation h3 {
+    margin-top: 0;
+}
+
+.preparation ul {
+    padding-left: 20px;
+}
+
+.preparation li {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   8. RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
