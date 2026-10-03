@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Tracker</title>
+</head>
+<body>
+    <header>Student Placement Tracker</header>
+    <nav href="#">Dashboard</nav>
+    <nav href="#">Aptitude</nav>
+    <nav href="#">Programming</nav>
+    <nav href="#">Companies</nav>
+    <nav href="#">Progress</nav>
+    <h2>Welcome back!</h2>
+    <p>Track your Placement Preparation journey</p>
+    <div class="cards">
+
+    <div class="card">
+        <h3>Aptitude</h3>
+        <p>{{ aptitude }}% Completed</p>
+    </div>
+
+    <div class="card">
+        <h3>Programming</h3>
+        <p>{{ programming }}% Completed</p>
+    </div>
+
+    <div class="card">
+        <h3>Companies</h3>
+        <p>{{ companies }}% Completed</p>
+    </div>
+
+</div>
+<section class="overall-progress">
+
+    <h3>Overall Placement Preparation</h3>
+
+    <p>70% Completed</p>
+
+    <progress value="70" max="100"></progress>
+
+</section>
+<section class="preparation">
+
+    <h3>What to Prepare</h3>
+
+    <ul>
+        <li>Aptitude</li>
+        <li>Python Programming</li>
+        <li>Data Structures</li>
+        <li>SQL</li>
+        <li>Interview Preparation</li>
+    </ul>
+
+</section>
+    
+</body>
+</html>
